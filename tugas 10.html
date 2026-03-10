@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas 10</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            width: 100%;
+            }
+
+        /* Header */
+        header{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        /* Navigasi */
+        nav{
+            background:#555;
+            text-align:center;
+            padding:10px;
+        }
+
+        nav a{
+            display:inline-block;
+            color:white;
+            text-decoration:none;
+            padding:10px 20px;
+            margin:5px;
+            background:#777;
+        }   
+
+        /* Container artikel */
+        .container{
+            padding:20px;
+        }
+
+        /* Style artikel */
+        article{
+            width:420px;
+            height:520px;
+            border:1px solid #ccc;
+            padding:20px;
+            margin:10px;
+            background-color: white;
+            display:inline-block;
+            vertical-align:top;
+        }
+        .sport {
+            width: 250px;
+            height: 250px;
+        }
+
+        .casual {
+            width: 250px;
+            height: 250px;
+        }
+
+        .running {
+            width: 250px;
+            height: 250px;
+        }
+
+        .hiking {
+            width: 250px;
+            height: 250px;
+        }
+
+        body {
+            background: grey;
+        }
+
+        /* Overflow*/
+        .visible{ overflow:visible; }
+        .hidden{ overflow:hidden; }
+        .scroll{ overflow:scroll; }
+        .auto{ overflow:auto; }
+
+        footer {
+             text-align: center;
+             padding: 1.5em;
+        }
+        .bl {
+            border: 2px solid;
+
+        }
+
+        .tombol-beli {
+        background-color: #27ae60; /* Hijau Online Shop */
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Jenis Sepatu</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Product</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+<article class="visible">
+    <img src="sport.jpg" class="sport">
+    <h3>Sepatu Sport</h3>
+    <p>
+         Sepatu sport ini dirancang untuk aktivitas olahraga dan kegiatan sehari hari. 
+         Bahan ringan membuat kaki terasa nyaman saat bergerak. 
+         Sol karet kuat membantu menjaga keseimbangan ketika berlari atau berjalan. 
+         Desain modern membuat sepatu ini cocok dipakai di berbagai aktivitas santai maupun olahraga ringan.
+    </p>
+    <button class="tombol-beli" onclick="alert('Masuk ke Keranjang')">
+        BELI SEKARANG
+    </button>
+</article>
+
+<article class="hidden">
+    <img src="casual.jpg" class="casual">
+    <h3>Sepatu Casual</h3>
+    <p>
+         Sepatu casual memiliki desain sederhana namun tetap terlihat modern dan menarik. 
+         Sepatu ini cocok digunakan untuk kuliah, bekerja, atau jalan santai bersama teman. 
+         Bahan lembut membuat kaki tetap nyaman dipakai dalam waktu lama tanpa terasa panas dan 
+         membantu menunjang penampilan sehari hari.
+    </p>
+    <button class="tombol-beli" onclick="alert('Masuk ke Keranjang')">
+        BELI SEKARANG
+    </button>
+</article>
+
+<article class="scroll">
+    <img src="running.jpg" class="running">
+    <h3>Sepatu Running</h3>
+    <p>
+        Sepatu running dibuat khusus untuk pelari yang membutuhkan kenyamanan dan perlindungan kaki saat berlari jarak jauh. 
+        Bantalan empuk pada bagian sol membantu mengurangi tekanan saat kaki menyentuh tanah. 
+        Material yang ringan juga membantu meningkatkan kecepatan dan kenyamanan selama latihan olahraga.
+    </p>
+    <button class="tombol-beli" onclick="alert('Masuk ke Keranjang')">
+        BELI SEKARANG
+    </button>
+</article>
+
+<article class="auto">
+    <img src="hiking.jpg" class="hiking">
+    <h3>Sepatu Hiking</h3>
+    <p>
+        Sepatu hiking dirancang untuk kegiatan luar ruangan seperti mendaki gunung atau menjelajah alam. 
+        Sol tebal dan kuat memberikan cengkeraman yang baik di berbagai medan. 
+        Bahan sepatu juga tahan terhadap air dan debu sehingga kaki tetap terlindungi dan nyaman selama perjalanan panjang.
+    </p>
+    <button class="tombol-beli" onclick="alert('Masuk ke Keranjang')">
+        BELI SEKARANG
+    </button>
+</article>
+<footer>Copyright &copy By Dimas</footer>
+</div>
+</body>
+</html>
