@@ -7,7 +7,7 @@
     <style>
         body{
             font-family: Arial, sans-serif;
-            margin:0;
+            margin: 0;
             width: 100%;
             }
 
@@ -17,6 +17,7 @@
             color:white;
             text-align:center;
             padding:20px;
+            animation: turun 1s ease;
         }
 
         /* Navigasi */
@@ -104,6 +105,26 @@
         cursor: pointer;
         transition: background-color 0.3s;
     }
+        @keyframes turun{
+            from{
+                transform:translateY(-50px);
+                opacity:0;
+            }
+            to{
+                transform:translateY(0);
+                opacity:1;
+            }
+        }
+
+        @keyframes muncul{
+            from{
+                transform:translateY(40px);
+                opacity:0;
+            }
+            to{
+                transform:translateY(0);
+                opacity:1;
+            }
     </style>
 </head>
 <body>
