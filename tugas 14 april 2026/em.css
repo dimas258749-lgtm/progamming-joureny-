@@ -1,0 +1,37 @@
+.contact {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.email-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.email-btn:hover {
+    background: darkred;
+}
+
+.email-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
