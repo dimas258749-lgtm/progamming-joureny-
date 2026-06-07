@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login mas DimasStore</title>
+    <link href="" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f9f9f9;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+            width: 100%;
+            max-width: 400px;
+            padding: 44px 40px 40px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 600;
+            color: #111;
+            letter-spacing: -0.3px;
+            margin-bottom: 32px;
+        }
+
+        .logo span { color: #888; font-weight: 400; }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #111;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 32px;
+        }
+
+        .field { margin-bottom: 18px; }
+
+        .field label {
+            display: block;
+            font-size: 13px;
+            font-weight: 500;
+            color: #444;
+            margin-bottom: 7px;
+        }
+
+        .field input {
+            width: 100%;
+            padding: 13px 16px;
+            border: 1.5px solid #e8e8e8;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #111;
+            background: #fafafa;
+            outline: none;
+            transition: border-color 0.2s, background 0.2s;
+            width: 300px;
+        }
+
+        .field input:focus {
+            border-color: #111;
+            background: #fff;
+        }
+
+        .field input::placeholder { color: #bbb; }
+
+        .row {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+            margin-top: -6px;
+        }
+
+        .row a {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .row a:hover { color: #111; }
+
+        .btn-login {
+            width: 100%;
+            padding: 14px;
+            background: #111;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .btn-login:hover { background: #333; }
+        .btn-login:active { transform: scale(0.99); }
+
+        .sep {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .sep hr { flex: 1; border: none; border-top: 1px solid #eee; }
+        .sep span { font-size: 12px; color: #bbb; }
+
+        .btn-register {
+            width: 100%;
+            padding: 13px;
+            background: transparent;
+            color: #111;
+            border: 1.5px solid #e8e8e8;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .btn-register:hover {
+            border-color: #ccc;
+            background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return login()" method="post">
+     <div class="card">
+        <div class="logo">Dimas<span>Store</span></div>
+
+        <h2>Masuk</h2>
+        <p class="subtitle">Selamat datang kembali </p>
+
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder=" Masukan Email" required>
+        </div>
+
+        <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Masukan Password" required>
+        </div>
+
+        <div class="row">
+            <a href="lupa pw.html">Lupa password?</a>
+        </div>
+
+       <button type="submit" class="btn-login">Login</button>
+
+        <div class="sep">
+            <hr><span>atau</span><hr>
+        </div>
+
+        <button class="btn-register" onclick="Register()">Buat akun baru</button>
+     </div>
+    </form>
+        
+
+    <script>
+       function login() {
+             window.location.href = './4.html';
+             return false;
+        }
+
+        function Register() {
+             window.location.href = './register.html';
+             return false;
+        }
+    </script>
+
+</body>
+</html>
